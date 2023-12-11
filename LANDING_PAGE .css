@@ -1,0 +1,181 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+section,
+footer {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+header {
+  background-color: #e0960c;
+  color: #fff;
+  text-align: center;
+  width: 100vw;
+  padding: 25px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #e0960c;
+  width: 100vw;
+  padding: 10px;
+}
+
+.logo {
+  height: 65px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.list-container li {
+  font-weight: normal;
+  list-style-type: circle;
+  padding-left: 25px;
+  padding: 10px;
+}
+
+.nav-links li {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.list-container {
+  padding-left: 75px;
+}
+
+.main-heading {
+  color: #1bb506;
+  padding: 15px;
+  margin-bottom: 20px;
+  margin: 15px;
+  text-align: center;
+}
+
+.destinations,
+.packages,
+.contact {
+  margin-top: 30px;
+}
+
+.destination,
+.package {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.image-container {
+  text-align: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.contact {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 40px;
+  margin-bottom: 20px;
+}
+
+i {
+  margin: 5px;
+}
+
+.price {
+  font-weight: bold;
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+.our-packages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    margin-right: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  header h1 {
+    font-size: 1.2em;
+  }
+  .our-packages {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: flex-start;
+  }
+}
